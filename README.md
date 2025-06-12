@@ -44,3 +44,15 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/zaralrubaie/smart_note.git
    cd smart_note
+
+   ##################################
+Limitations:
+The summarization process can take some time, especially for longer texts or complex inputs.
+
+Running the model locally may be slow if your computer lacks a powerful GPU or sufficient memory.
+
+The main model uses inference only; training large models locally is resource-intensive and not supported in this project.
+
+When using the live app on Hugging Face Spaces, inference time may also be affected by server load and internet speed.
+
+
