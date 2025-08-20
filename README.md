@@ -49,7 +49,7 @@ Follow these steps to run Smart Note on your local machine:
 1. **Clone the repository:**
 
 ```bash
-   git clone https://github.com/zaralrubaie/smart_note.git
+   git clone https://github.com/zaralrubaie/-smart-meeting-notes-by-LLM-.git
    cd smart_note
 ```
 2. Install dependencies:
