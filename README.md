@@ -1,16 +1,14 @@
-# Smart Note - Text Summarization App
+# Smart Note - AI-Powered Text Summarization 📝🤖
 
-Welcome to **Smart Note**, a simple and effective text summarization app powered by AI and built with Gradio!
+[![Python](https://img.shields.io/badge/python-3.10+-blue)](https://www.python.org/)  
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Spaces-orange)](https://huggingface.co/spaces/zahraa12355/smart_note)
 
----
-
-## About
-Smart Note takes your input text and generates a concise summary to help you quickly understand the main points.  
-Ideal for meeting notes, articles, or any long text you want to digest faster.
+Welcome to **Smart Note**, a lightweight and effective AI-powered text summarization app built with **Gradio**!  
+Quickly digest meeting notes, articles, or any long text with concise summaries.
 
 ---
 
-##Features
+## 🔹 Features
 
 - AI-powered text summarization
 - Easy-to-use web interface via Gradio
@@ -18,41 +16,49 @@ Ideal for meeting notes, articles, or any long text you want to digest faster.
 - Runs locally or deployed on Hugging Face Spaces
 
 ---
-
-# Project Structure
-
-- `app.py` - Main application file with Gradio interface  
-- `requirements.txt` - Python dependencies  
-- `README.md` - Project documentation  
-
----
-
-# Smart Note Summarization App
-
-This project provides a smart meeting notes summarization app powered by Hugging Face and Gradio.
+## 🔹 Live Demo
 
 Try the live app here:  
 [Smart Note on Hugging Face Spaces](https://huggingface.co/spaces/zahraa12355/smart_note)
 
----
-# Run Locally
+## 🔹 Project Structure
 
-To run this project locally, follow these steps:
+- `app.py` - Runs the Gradio interface for text summarization  
+- `requirements.txt` - Lists all Python dependencies for the project  
+- `README.md` - Contains project description and instructions  
+
+  ---
+
+# Smart Note - AI-Powered Text Summarization 📝🤖
+
+Smart Note is a smart meeting notes summarization app powered by **Hugging Face** models and **Gradio**.  
+It quickly converts long text—like meeting notes or articles—into concise summaries.
+
+---
+
+## 🔹 Live Demo
+
+Try the app live here:  
+[Smart Note on Hugging Face Spaces](https://huggingface.co/spaces/zahraa12355/smart_note)
+
+---
+## 🔹 Run Locally
+
+Follow these steps to run Smart Note on your local machine:
 
 1. **Clone the repository:**
 
-   ```bash
+```bash
    git clone https://github.com/zaralrubaie/smart_note.git
    cd smart_note
+```
+2. Install dependencies:
+ ```bash
+pip install -r requirements.txt
+```
+## 🔹 Limitations
 
-   ##################################
-Limitations:
-The summarization process can take some time, especially for longer texts or complex inputs.
-
-Running the model locally may be slow if your computer lacks a powerful GPU or sufficient memory.
-
-The main model uses inference only; training large models locally is resource-intensive and not supported in this project.
-
-When using the live app on Hugging Face Spaces, inference time may also be affected by server load and internet speed.
-
-
+- Summarization may take longer for longer or complex texts.  
+- Running the model locally may be slow if your computer lacks a powerful GPU or sufficient memory.  
+- This project uses the pretrained model for **inference only**; training large models locally is resource-intensive and not supported.  
+- When using the live app on Hugging Face Spaces, inference time may also be affected by **server load** and **internet speed**.
