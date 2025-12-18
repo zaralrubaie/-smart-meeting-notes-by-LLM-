@@ -61,11 +61,11 @@ Try the app live here:
    
 ## 🔹 Limitations
 
-- Summarization may take longer for longer or complex texts.  
-- Running the model locally may be slow if your computer lacks a powerful GPU or sufficient memory.  
-- This project uses the pretrained model for **inference only**; training large models locally is resource-intensive and not supported.  
-- When using the live app on Hugging Face Spaces, inference time may also be affected by **server load** and **internet speed**.
-
+- Summarization performance may decrease for long or complex texts, and inference time increases with input length.
+- Running the model locally on CPU-only hardware can be slow due to limited memory and lack of GPU acceleration.
+- This project uses a pretrained model for inference only; fine-tuning or training large transformer models locally is computationally expensive and not supported.
+- When deployed on Hugging Face Spaces, inference time may vary depending on server load and network latency.
+  
   ##  🔹License
 This project is licensed under the MIT License.
 
