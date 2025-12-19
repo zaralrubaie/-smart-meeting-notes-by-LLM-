@@ -1,4 +1,3 @@
-# import needed libraries
 import gradio as gr
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 #  Initialize tokenizer and model
@@ -6,6 +5,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
 def summarize_text(text):
  # Tokenize input text
+ tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
+
  inputs = tokenizer(text, return_tensors="pt", max_length=1024, truncation=True)
 # Generate summary
  summary_ids = model.generate(
@@ -19,8 +20,8 @@ def summarize_text(text):
         no_repeat_ngram_size=3
     )
 # decode will help to represent the ouptput as human understand language
-    summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
-    return summary
+ summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
+ return summary
 #  Launch Gradio Interface for Interactive Summarization
 iface = gr.Interface(
     fn=summarize_text,
